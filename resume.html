@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Mukilan R | UI/UX Designer</title>
+  <meta name="description" content="Resume of Mukilan R - UI/UX Designer & Frontend Developer.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* --- CSS Variables & Theme --- */
+    :root {
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --bg-page: #f1f5f9;
+      --bg-resume: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #334155;
+      --text-sub: #64748b;
+      --border-color: #cbd5e1;
+      --primary: #4f46e5;
+      --primary-dark: #3730a3;
+      --accent: #0284c7;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0b0f19;
+      --bg-resume: #131b2e;
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --text-sub: #94a3b8;
+      --border-color: #2e3d5b;
+      --primary: #818cf8;
+      --primary-dark: #6366f1;
+      --accent: #38bdf8;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.55;
+      font-size: 14.5px;
+      padding: 30px 16px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Action Floating Bar for Web View */
+    .resume-actions-bar {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #4f46e5;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: #4338ca;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--bg-resume);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Resume Document Wrapper (A4 Proportions) */
+    .resume-sheet {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--bg-resume);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 48px 54px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    /* Header Section */
+    .resume-header {
+      text-align: center;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 20px;
+      margin-bottom: 22px;
+    }
+
+    .applicant-name {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .applicant-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-line a {
+      color: inherit;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .contact-line a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .separator {
+      color: var(--border-color);
+      font-weight: bold;
+    }
+
+    /* Section Headings */
+    .section-block {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-main);
+      border-bottom: 1.5px solid var(--border-color);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .summary-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* Experience & Projects Items */
+    .timeline-entry {
+      margin-bottom: 14px;
+    }
+
+    .timeline-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .entry-role {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .entry-date {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-sub);
+    }
+
+    .entry-company {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .entry-location {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-sub);
+    }
+
+    .entry-details {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .entry-details ul {
+      padding-left: 18px;
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    /* Skills Grid in Resume */
+    .skills-table {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 12px;
+    }
+
+    .skill-type {
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .skill-val {
+      color: var(--text-muted);
+    }
+
+    /* Education Item */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .edu-left h4 {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .edu-inst {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .edu-score {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .edu-right {
+      text-align: right;
+    }
+
+    .edu-date {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-sub);
+    }
+
+    .edu-loc {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+        font-size: 11pt !important;
+      }
+
+      .resume-actions-bar {
+        display: none !important;
+      }
+
+      .resume-sheet {
+        max-width: 100% !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .applicant-name {
+        color: #000000 !important;
+        font-size: 20pt !important;
+      }
+
+      .applicant-title {
+        color: #2563eb !important;
+        font-size: 11pt !important;
+      }
+
+      .entry-company {
+        color: #2563eb !important;
+      }
+
+      .section-title {
+        border-bottom: 1.5pt solid #000000 !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+      }
+
+      .edu-score {
+        color: #000000 !important;
+      }
+
+      @page {
+        margin: 1.2cm;
+        size: A4 portrait;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Bar with Actions -->
+  <div class="resume-actions-bar">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <a href="index.html" class="btn btn-secondary">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <button class="btn btn-secondary" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        <i class="fas fa-adjust"></i> Theme
+      </button>
+      <button class="btn btn-primary" onclick="window.print()">
+        <i class="fas fa-print"></i> Print / Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- A4 Printable Resume Sheet -->
+  <main class="resume-sheet">
+
+    <!-- Header / Personal Info -->
+    <header class="resume-header">
+      <h1 class="applicant-name">MUKILAN R</h1>
+      <div class="applicant-title">UI/UX Designer</div>
+
+      <div class="contact-line">
+        <a href="mailto:mukilanravikumar17@gmail.com"><i class="fas fa-envelope"></i> mukilanravikumar17@gmail.com</a>
+        <span class="separator">|</span>
+        <a href="tel:6380234657"><i class="fas fa-phone"></i> 6380234657</a>
+        <span class="separator">|</span>
+        <span><i class="fas fa-map-marker-alt"></i> Namakkal, TamilNadu</span>
+        <span class="separator">|</span>
+        <a href="https://linkedin.com/in/mukilan-ravi" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/mukilan-ravi</a>
+      </div>
+
+      <div class="contact-line">
+        <a href="https://github.com/MukilanRavi17" target="_blank"><i class="fab fa-github"></i> github.com/MukilanRavi17</a>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section class="section-block">
+      <h2 class="section-title">Summary</h2>
+      <p class="summary-text">
+        UI/UX Designer with internship experience redesigning and developing responsive websites — from Figma wireframes and prototypes to functional builds using HTML, CSS, and JavaScript. Skilled in user research, usability testing, and translating requirements into accessible, user-friendly interfaces. UI/UX certified with a self-driven approach to independent design and development projects.
+      </p>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section-block">
+      <h2 class="section-title">Professional Experience</h2>
+      
+      <div class="timeline-entry">
+        <div class="entry-header">
+          <span class="entry-role">UI/UX Design Intern</span>
+          <span class="entry-date">08/2026 – 09/2026</span>
+        </div>
+        <div class="entry-company">
+          <span>Duhzine IT Solutions Private Limited</span>
+          <span class="entry-location">Navalur, Chennai</span>
+        </div>
+        <div class="entry-details">
+          Completed website redesign and mobile UI/UX product design tasks during internship training: <strong>Vanguard Learn: AI Career &amp; Skill Tracker</strong> (<a href="https://www.figma.com/design/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=3-2&t=4JtsO2zSD7d5rnAD-1" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Figma Prototype</a>), <strong>VBST Tour &amp; Travels Website</strong> (<a href="https://mukilanravi17.github.io/VBST-Tours-Travel/index.html" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Live Demo</a> | <a href="https://www.figma.com/proto/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=192-5&t=pTkU6W5gL5r11Rhb-1" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Figma Prototype</a>), <strong>Annai Foundation Website</strong> (<a href="https://mukilanravi17.github.io/Annai-Foundation/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Live Demo</a> | <a href="https://www.figma.com/design/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=534-2&t=FbxvIJQ2KVulB54H-1" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Figma Prototype</a>), and <strong>Threadloom Website</strong> (<a href="https://mukilanravi17.github.io/Threadloom/" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;">Live Demo</a>). Redesigned and developed responsive websites using Figma, HTML, CSS, and JavaScript. Conducted user research, persona creation, and usability testing across all projects.
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section-block">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-table">
+        <div class="skill-row">
+          <div class="skill-type">Design:</div>
+          <div class="skill-val">UI/UX Design, Wireframing, Prototyping, User Research, Usability Testing, Responsive Design, Design Thinking, Visual Design, Accessibility</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-type">Tools:</div>
+          <div class="skill-val">Figma, Adobe Photoshop</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-type">Development:</div>
+          <div class="skill-val">HTML, CSS, JavaScript</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-type">Soft Skills:</div>
+          <div class="skill-val">Communication, Problem-Solving, Self-Management, Attention to Detail</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section-block">
+      <h2 class="section-title">Education</h2>
+      
+      <div class="edu-entry">
+        <div class="edu-left">
+          <h4>Bachelor of Engineering (B.E.) - Computer Science and Engineering</h4>
+          <div class="edu-inst">Muthayammal Engineering College (<span class="edu-score">CGPA : 6.7</span>)</div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-date">08/2023 – 05/2026</div>
+          <div class="edu-loc">Rasipuram</div>
+        </div>
+      </div>
+
+      <div class="edu-entry">
+        <div class="edu-left">
+          <h4>Diploma - Computer Science and Engineering</h4>
+          <div class="edu-inst">Muthayammal Polytechnic Institution (<span class="edu-score">Percentage : 88%</span>)</div>
+        </div>
+        <div class="edu-right">
+          <div class="edu-date">07/2020 – 04/2023</div>
+          <div class="edu-loc">Rasipuram</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section-block">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="timeline-entry">
+        <div class="entry-header">
+          <span class="entry-role">Instagram App Redesign</span>
+          <span class="entry-date">08/2026 – 08/2026</span>
+        </div>
+        <div style="font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 4px;">
+          Tool : Figma | <a href="https://www.figma.com/design/QrtfBuWVhPEFG4kiJtTDox/instagram--Redesign-?node-id=0-1&t=z6F2PrIrV3DdHt99-1" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;"><i class="fab fa-figma"></i> Live Figma Prototype</a>
+        </div>
+        <div class="entry-details">
+          Redesigned the Instagram mobile app as a self-initiated UI/UX project, creating wireframes and high-fidelity prototypes in Figma. Focused on improving navigation, visual hierarchy, and overall usability by analyzing the existing app's user flow and identifying design gaps.
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="entry-header">
+          <span class="entry-role">AI-Based Career Guidance &amp; Skill Tracking System (Vanguard Learn)</span>
+          <span class="entry-date">09/2026 – 09/2026</span>
+        </div>
+        <div style="font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 4px;">
+          Tools/Skills: Figma, UI/UX Design, Wireframing, User Research, Prototyping, Case Study Documentation | <a href="https://www.figma.com/design/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=3-2&t=4JtsO2zSD7d5rnAD-1" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;"><i class="fab fa-figma"></i> Live Figma Prototype</a>
+        </div>
+        <div class="entry-details">
+          Designed and wireframed a mobile UI/UX case study for an AI-powered EdTech platform (Vanguard Learn). Conducted user research and persona development, created wireframes and high-fidelity screens including onboarding, dashboard, Socratic AI tutor, and 5-axis skill tracking. Delivered complete UX case study covering research, design rationale, and system architecture.
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section-block">
+      <h2 class="section-title">Certificates</h2>
+      
+      <div class="timeline-entry">
+        <div class="entry-header">
+          <span class="entry-role">Certificate of Completion — Course on UI/UX Designing</span>
+          <span class="entry-date">05/2026 – 08/2026</span>
+        </div>
+        <div style="font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 4px;">
+          LIVEWIRE (CADD Centre Training Services Pvt Ltd) — Salem Center | Student ID: CO260425Z530702 | <a href="certificate.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: underline;"><i class="fas fa-file-pdf"></i> View Certificate PDF</a>
+        </div>
+        <div class="entry-details">
+          This certification provided hands-on professional training in UI/UX design fundamentals, including user research, wireframing, prototyping, and usability testing, alongside front-end web development using HTML, CSS, and JavaScript. Gained practical experience designing interfaces in Figma and translating designs into functional, coded web pages, bridging the gap between design and development.
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="section-block">
+      <h2 class="section-title">Languages</h2>
+      <div style="display: flex; gap: 32px; font-size: 0.92rem; color: var(--text-muted); font-weight: 500;">
+        <span>• English</span>
+        <span>• Kannada</span>
+        <span>• Tamil</span>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme') || 'light';
+      html.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+    }
+  </script>
+</body>
+</html>

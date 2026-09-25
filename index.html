@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukilan R | UI/UX Designer & Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mukilan R — UI/UX Designer with experience in Figma wireframing, user research, usability testing, and frontend development with HTML, CSS, and JavaScript.">
+  <meta name="keywords" content="Mukilan R, UI/UX Designer, Frontend Developer, Figma, Web Design, HTML CSS JavaScript, Portfolio, Resume">
+  <meta name="author" content="Mukilan R">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mukilan R — UI/UX Designer & Frontend Developer">
+  <meta property="og:description" content="Explore UI/UX design case studies, responsive web development projects, and design systems by Mukilan R.">
+  <meta property="og:image" content="./profile.jpg">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Favicon (Inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2225%22 fill=%22%236366f1%22/><text y=%2265%22 x=%2250%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2250%22 font-weight=%22bold%22 fill=%22%23ffffff%22>M</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="bg-ambient-orb orb-1"></div>
+  <div class="bg-ambient-orb orb-2"></div>
+  <div class="bg-ambient-orb orb-3"></div>
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-badge">MR</div>
+        <span>Mukilan<span class="brand-dot">.</span>design</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#journey" class="nav-link">Experience</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light theme" title="Toggle Theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+
+        <!-- View Resume CTA -->
+        <a href="resume.html" target="_blank" class="btn btn-secondary btn-sm" style="display: inline-flex; align-items: center; gap: 6px;">
+          <i class="fas fa-file-invoice"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Hire Me CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for UI/UX & Frontend Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="name-highlight gradient-text">Mukilan R</span>
+          </h1>
+
+          <div class="hero-role-badge">
+            <i class="fas fa-layer-group"></i>
+            <span>UI/UX Designer &amp; Frontend Developer</span>
+          </div>
+
+          <p class="hero-bio">
+            Passionate UI/UX Designer with hands-on internship experience redesigning and developing responsive websites — bridging user research &amp; Figma prototyping to functional, accessible builds in HTML, CSS, and JavaScript.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-shapes"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-secondary">
+              <i class="fas fa-file-alt"></i>
+              <span>View Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn: linkedin.com/in/mukilan-ravi">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/MukilanRavi17" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub: github.com/MukilanRavi17">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:mukilanravikumar17@gmail.com" class="social-btn" title="Email: mukilanravikumar17@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+916380234657" class="social-btn" title="Phone: +91 6380234657">
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual / Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-backdrop"></div>
+            
+            <div class="avatar-frame">
+              <img src="./profile.jpg" alt="Mukilan R - UI/UX Designer" class="avatar-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80'">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-figma">
+              <span class="badge-icon"><i class="fab fa-figma" style="color: #a259ff;"></i></span>
+              <span>Figma Prototyping</span>
+            </div>
+
+            <div class="floating-badge badge-code">
+              <span class="badge-icon"><i class="fab fa-js-square" style="color: #f7df1e;"></i></span>
+              <span>HTML • CSS • JS</span>
+            </div>
+
+            <div class="floating-badge badge-ux">
+              <span class="badge-icon"><i class="fas fa-fingerprint" style="color: #06b6d4;"></i></span>
+              <span>UX Research &amp; Testing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics / Stats Bar -->
+      <div class="stats-strip">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-globe"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" data-target="3" data-suffix="+">3+</div>
+            <div class="stat-label">Website Redesigns Completed</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-award"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-label">Responsive &amp; Accessible</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" data-target="1" data-suffix=" Certified">1</div>
+            <div class="stat-label">Livewire UI/UX Certified</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="stat-info">
+            <div class="stat-number" data-target="88" data-suffix="%">88%</div>
+            <div class="stat-label">Diploma Academic Distinction</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. ABOUT ME SECTION
+       ========================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+        <h2 class="section-title">Designing with Empathy, <br><span class="gradient-text">Building with Precision</span></h2>
+        <p class="section-subtitle">A blend of aesthetic visual design principles and solid computer science foundation.</p>
+      </div>
+
+      <div class="about-grid">
+        
+        <!-- Narrative Column -->
+        <div class="about-narrative">
+          <p class="about-lead">
+            I am a self-driven <strong>UI/UX Designer and Frontend Enthusiast</strong> based in Tamil Nadu, India, with a strong background in Computer Science and Engineering.
+          </p>
+          <p class="about-desc">
+            During my internship at <strong>Duhzine IT Solutions Private Limited</strong> (Navalur, Chennai), I spearheaded 3 website redesign projects, translating complex business requirements into intuitive wireframes, interactive high-fidelity prototypes in Figma, and production-ready code with HTML, CSS, and JavaScript.
+          </p>
+          <p class="about-desc">
+            My design philosophy centers on user empathy: conducting meaningful user research, running usability testing to eliminate friction points, and crafting design systems that bridge the gap between design visions and functional engineering.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <i class="fas fa-compass highlight-icon"></i>
+              <div>
+                <div class="highlight-title">User-Centered Approach</div>
+                <div class="highlight-sub">Research, Empathy Maps &amp; User Flows</div>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <i class="fas fa-pencil-ruler highlight-icon"></i>
+              <div>
+                <div class="highlight-title">Figma Prototyping</div>
+                <div class="highlight-sub">Wireframes, UI Kits &amp; Micro-interactions</div>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <i class="fas fa-code highlight-icon"></i>
+              <div>
+                <div class="highlight-title">Front-End Development</div>
+                <div class="highlight-sub">Clean Semantic HTML5, CSS3 &amp; Vanilla JS</div>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <i class="fas fa-universal-access highlight-icon"></i>
+              <div>
+                <div class="highlight-title">Accessibility &amp; Usability</div>
+                <div class="highlight-sub">WCAG standards, hierarchy &amp; testing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Process Column -->
+        <div class="process-wrapper">
+          <h3 style="margin-bottom: 20px; font-size: 1.35rem; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-sliders-h" style="color: var(--primary-light);"></i>
+            My Design &amp; Build Workflow
+          </h3>
+
+          <div class="process-card">
+            <div class="process-step">01</div>
+            <div class="process-info">
+              <h4>Discover &amp; Research</h4>
+              <p>Analyzing user needs, interviewing stakeholders, competitive benchmarking, and identifying experience bottlenecks.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step">02</div>
+            <div class="process-info">
+              <h4>Information Architecture &amp; Wireframes</h4>
+              <p>Structuring intuitive site navigation, task flows, and creating low-fidelity wireframes to validate layout concepts.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step">03</div>
+            <div class="process-info">
+              <h4>High-Fidelity UI &amp; Interactive Prototypes</h4>
+              <p>Designing polished visual interfaces, typography hierarchy, and clickable prototypes in Figma with micro-interactions.</p>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step">04</div>
+            <div class="process-info">
+              <h4>Frontend Build &amp; Usability Testing</h4>
+              <p>Translating Figma tokens to clean HTML, responsive CSS, and JavaScript while running usability tests to refine UX.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SKILLS & EXPERTISE MATRIX
+       ========================================================================== -->
+  <section class="section" id="skills" style="background: var(--bg-secondary);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-tools"></i> Competencies</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Expertise</span></h2>
+        <p class="section-subtitle">A balanced toolkit combining user experience research, creative visual tooling, and frontend web development.</p>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Category 1: UI/UX Design -->
+        <div class="skill-category-card">
+          <div class="skill-header">
+            <div class="skill-header-icon"><i class="fas fa-palette"></i></div>
+            <h3>UI/UX Design</h3>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>UI &amp; Visual Design</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Wireframing &amp; Prototyping</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>User Research &amp; Testing</span>
+                <span class="skill-level">88%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 88%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Design Thinking &amp; IA</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+            </div>
+          </div>
+
+          <div class="tags-cloud">
+            <span class="badge-tag">Accessibility (WCAG)</span>
+            <span class="badge-tag">Responsive Design</span>
+            <span class="badge-tag">Design Systems</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Tools & Software -->
+        <div class="skill-category-card">
+          <div class="skill-header">
+            <div class="skill-header-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Design &amp; Dev Tools</h3>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Figma (Components &amp; Auto-Layout)</span>
+                <span class="skill-level">94%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 94%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Adobe Photoshop</span>
+                <span class="skill-level">82%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 82%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>VS Code &amp; DevTools</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>GitHub</span>
+                <span class="skill-level">85%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+
+          <div class="tags-cloud">
+            <span class="badge-tag">Figma Mirror</span>
+            <span class="badge-tag">Interactive Component State</span>
+            <span class="badge-tag">Version Control</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Frontend Development -->
+        <div class="skill-category-card">
+          <div class="skill-header">
+            <div class="skill-header-icon"><i class="fas fa-code"></i></div>
+            <h3>Front-End Web</h3>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>HTML5 (Semantic &amp; SEO)</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>CSS3 (Flexbox, Grid &amp; Animations)</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>JavaScript</span>
+                <span class="skill-level">84%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 84%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Responsive &amp; Mobile-First Web</span>
+                <span class="skill-level">96%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 96%;"></div></div>
+            </div>
+          </div>
+
+          <div class="tags-cloud">
+            <span class="badge-tag">CSS Custom Properties</span>
+            <span class="badge-tag">Event Handling</span>
+            <span class="badge-tag">Cross-Browser Testing</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Professional & Soft Skills -->
+        <div class="skill-category-card">
+          <div class="skill-header">
+            <div class="skill-header-icon"><i class="fas fa-users-cog"></i></div>
+            <h3>Professional Strengths</h3>
+          </div>
+
+          <div class="skill-items-list">
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Problem-Solving &amp; Critical Thinking</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 92%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Attention to Detail &amp; Aesthetics</span>
+                <span class="skill-level">95%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Communication &amp; Teamwork</span>
+                <span class="skill-level">90%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-item-meta">
+                <span>Self-Management &amp; Adaptability</span>
+                <span class="skill-level">92%</span>
+              </div>
+              <div class="skill-progress-bar"><div class="skill-progress-fill" style="width: 92%;"></div></div>
+            </div>
+          </div>
+
+          <div class="tags-cloud">
+            <span class="badge-tag">Agile Collaboration</span>
+            <span class="badge-tag">Design Handoff</span>
+            <span class="badge-tag">Independent Learning</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Languages Spoken -->
+        <div class="skill-category-card" style="grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 22px 28px;">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <div class="skill-header-icon" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);"><i class="fas fa-language"></i></div>
+            <div>
+              <h3 style="font-size: 1.15rem; margin-bottom: 2px;">Languages Spoken</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Multilingual communication for collaborative cross-functional teams</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <span class="badge-tag" style="font-size: 0.88rem; padding: 6px 16px; background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.3); color: var(--text-main); font-weight: 600;"><i class="fas fa-check-circle" style="color: var(--primary-light); margin-right: 6px;"></i>English</span>
+            <span class="badge-tag" style="font-size: 0.88rem; padding: 6px 16px; background: rgba(6, 182, 212, 0.1); border-color: rgba(6, 182, 212, 0.3); color: var(--text-main); font-weight: 600;"><i class="fas fa-check-circle" style="color: var(--secondary-light); margin-right: 6px;"></i>Kannada</span>
+            <span class="badge-tag" style="font-size: 0.88rem; padding: 6px 16px; background: rgba(236, 72, 153, 0.1); border-color: rgba(236, 72, 153, 0.3); color: var(--text-main); font-weight: 600;"><i class="fas fa-check-circle" style="color: var(--accent-pink); margin-right: 6px;"></i>Tamil</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. FEATURED PROJECTS & CASE STUDIES
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world design implementations, mobile app redesigns, and interactive web applications.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+        <button class="filter-btn" data-filter="frontend">Web Development</button>
+        <button class="filter-btn" data-filter="internship">Internship Work</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: Instagram App Redesign -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-banner">
+            <div class="project-svg-canvas">
+              <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Mobile Mockup Silhouette -->
+                <rect x="70" y="10" width="80" height="120" rx="14" fill="#18181b" stroke="#6366f1" stroke-width="2"/>
+                <rect x="85" y="16" width="50" height="4" rx="2" fill="#52525b"/>
+                <!-- Instagram Gradient Camera Icon -->
+                <circle cx="110" cy="55" r="18" fill="url(#ig-grad)" />
+                <circle cx="110" cy="55" r="12" fill="#18181b" />
+                <circle cx="110" cy="55" r="7" fill="url(#ig-grad)" />
+                <circle cx="120" cy="45" r="2.5" fill="#fff" />
+                <!-- UI Post Lines -->
+                <rect x="78" y="82" width="64" height="6" rx="3" fill="#a1a1aa"/>
+                <rect x="78" y="94" width="45" height="4" rx="2" fill="#71717a"/>
+                <circle cx="85" cy="112" r="4" fill="#ec4899"/>
+                <circle cx="98" cy="112" r="4" fill="#8b5cf6"/>
+                <circle cx="111" cy="112" r="4" fill="#06b6d4"/>
+                <defs>
+                  <linearGradient id="ig-grad" x1="92" y1="37" x2="128" y2="73" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#f59e0b"/>
+                    <stop offset="0.5" stop-color="#ec4899"/>
+                    <stop offset="1" stop-color="#8b5cf6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="project-badge-top">UI/UX Case Study</span>
+            <span class="project-date-top">08/2026 – 08/2026</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Instagram App Redesign</h3>
+            <p class="project-desc">
+              A self-initiated UI/UX project redesigning the Instagram mobile app. Conducted in-depth user flow analysis, identified UX friction gaps, created wireframes, and designed high-fidelity interactive prototypes in Figma for enhanced navigation and visual hierarchy.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag-pill">Figma</span>
+              <span class="project-tag-pill">Wireframing</span>
+              <span class="project-tag-pill">Prototyping</span>
+              <span class="project-tag-pill">User Flow</span>
+              <span class="project-tag-pill">Mobile UI/UX</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-open-modal="instagram">
+                <i class="fas fa-book-open"></i> Read Case Study
+              </button>
+              <a href="https://www.figma.com/design/QrtfBuWVhPEFG4kiJtTDox/instagram--Redesign-?node-id=0-1&t=z6F2PrIrV3DdHt99-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Open Figma Project">
+                <i class="fab fa-figma"></i> Figma Prototype
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AI-Based Career Guidance & Skill Tracking System (Internship Project) -->
+        <div class="project-card" data-category="internship uiux">
+          <div class="project-banner">
+            <div class="project-svg-canvas" style="background: linear-gradient(135deg, #092c3e 0%, #0f172a 100%);">
+              <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Mobile Mockup Frame -->
+                <rect x="70" y="10" width="80" height="120" rx="14" fill="#0b1329" stroke="#06b6d4" stroke-width="2"/>
+                <rect x="85" y="16" width="50" height="4" rx="2" fill="#334155"/>
+                <!-- AI Bot / Brain Glowing Icon -->
+                <circle cx="110" cy="46" r="14" fill="url(#ai-blue-grad)"/>
+                <path d="M104 46h12M110 40v12M106 43l8 6M106 49l8-6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+                <!-- Skill Progress Bars on Screen -->
+                <rect x="78" y="68" width="64" height="6" rx="3" fill="#1e293b"/>
+                <rect x="78" y="68" width="46" height="6" rx="3" fill="#06b6d4"/>
+                <rect x="78" y="78" width="64" height="6" rx="3" fill="#1e293b"/>
+                <rect x="78" y="78" width="54" height="6" rx="3" fill="#6366f1"/>
+                <rect x="78" y="88" width="64" height="6" rx="3" fill="#1e293b"/>
+                <rect x="78" y="88" width="38" height="6" rx="3" fill="#10b981"/>
+                <!-- Bottom Action / Tutor Button -->
+                <rect x="80" y="102" width="60" height="14" rx="7" fill="url(#ai-blue-grad)"/>
+                <defs>
+                  <linearGradient id="ai-blue-grad" x1="70" y1="40" x2="150" y2="110" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#06b6d4"/>
+                    <stop offset="1" stop-color="#6366f1"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="project-badge-top" style="color: var(--secondary-light);">Internship Project</span>
+            <span class="project-date-top">09/2026 – 09/2026</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Vanguard Learn: AI Career &amp; Skill Tracker</h3>
+            <p class="project-desc">
+              An AI-powered academic advising, curriculum tracking, and skill mastery mobile app case study. Features Socratic AI tutoring, 5-axis competency radar (82% readiness), 14-day streak habits, Dean's List analytics, and 4-tier institutional moat strategy.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag-pill">Figma</span>
+              <span class="project-tag-pill">UI/UX Design</span>
+              <span class="project-tag-pill">User Research</span>
+              <span class="project-tag-pill">AI Socratic Tutor</span>
+              <span class="project-tag-pill">Competency Radar</span>
+              <span class="project-tag-pill">EdTech Mobile UX</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-open-modal="aicareer">
+                <i class="fas fa-book-open"></i> Read Case Study
+              </button>
+              <a href="https://www.figma.com/design/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=3-2&t=4JtsO2zSD7d5rnAD-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Open Figma Project">
+                <i class="fab fa-figma"></i> Figma Prototype
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: VBST Tour & Travels Website (Internship Project) -->
+        <div class="project-card" data-category="internship uiux frontend">
+          <div class="project-banner">
+            <div class="project-svg-canvas" style="background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);">
+              <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Browser Frame with Travel Hero -->
+                <rect x="25" y="15" width="170" height="110" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="2"/>
+                <rect x="25" y="15" width="170" height="18" fill="#1e1e38"/>
+                <circle cx="36" cy="24" r="3" fill="#ef4444"/>
+                <circle cx="46" cy="24" r="3" fill="#f59e0b"/>
+                <circle cx="56" cy="24" r="3" fill="#10b981"/>
+                <!-- Travel Card Content -->
+                <rect x="35" y="42" width="75" height="8" rx="2" fill="#a855f7"/>
+                <rect x="35" y="54" width="95" height="4" rx="2" fill="#94a3b8"/>
+                <rect x="35" y="62" width="60" height="4" rx="2" fill="#64748b"/>
+                <rect x="35" y="74" width="40" height="10" rx="5" fill="#6366f1"/>
+                <!-- Destination Badge / Bus/Tour Icon Graphic -->
+                <rect x="135" y="42" width="50" height="40" rx="6" fill="#1e1e38" stroke="#3730a3"/>
+                <circle cx="160" cy="58" r="10" fill="#a855f7" opacity="0.8"/>
+                <path d="M154 58h12M160 52v12" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                <rect x="140" y="72" width="40" height="4" rx="2" fill="#cbd5e1"/>
+                <rect x="135" y="88" width="50" height="28" rx="6" fill="#1e1e38" stroke="#3730a3"/>
+              </svg>
+            </div>
+            <span class="project-badge-top" style="color: var(--accent-pink);">Internship Project</span>
+            <span class="project-date-top">08/2026 – 09/2026</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">VBST Tour &amp; Travels Website</h3>
+            <p class="project-desc">
+              Designed and developed a responsive travel &amp; tourism website during internship training at Duhzine IT Solutions (Navalur, Chennai). Built wireframes &amp; high-fidelity prototypes in Figma, and developed the live web experience using HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag-pill">Figma</span>
+              <span class="project-tag-pill">HTML5/CSS3</span>
+              <span class="project-tag-pill">JavaScript</span>
+              <span class="project-tag-pill">Responsive Design</span>
+              <span class="project-tag-pill">Duhzine IT Solutions</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-open-modal="duhzine">
+                <i class="fas fa-book-open"></i> Case Study
+              </button>
+              <a href="https://mukilanravi17.github.io/VBST-Tours-Travel/index.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Live Website">
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+              <a href="https://www.figma.com/proto/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=192-5&t=pTkU6W5gL5r11Rhb-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Open Figma Prototype">
+                <i class="fab fa-figma"></i> Prototype
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Annai Foundation Website (Internship Project) -->
+        <div class="project-card" data-category="internship uiux frontend">
+          <div class="project-banner">
+            <div class="project-svg-canvas" style="background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);">
+              <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Browser Frame with Foundation / Charity Layout -->
+                <rect x="25" y="15" width="170" height="110" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+                <rect x="25" y="15" width="170" height="18" fill="#062e24"/>
+                <circle cx="36" cy="24" r="3" fill="#ef4444"/>
+                <circle cx="46" cy="24" r="3" fill="#f59e0b"/>
+                <circle cx="56" cy="24" r="3" fill="#10b981"/>
+                <!-- Hero & Charity Cause Cards -->
+                <rect x="35" y="42" width="75" height="8" rx="2" fill="#34d399"/>
+                <rect x="35" y="54" width="95" height="4" rx="2" fill="#94a3b8"/>
+                <rect x="35" y="62" width="55" height="4" rx="2" fill="#64748b"/>
+                <rect x="35" y="74" width="45" height="10" rx="5" fill="#10b981"/>
+                <!-- Charity Badge / Heart with Hands Icon Graphic -->
+                <rect x="135" y="42" width="50" height="40" rx="6" fill="#062e24" stroke="#047857"/>
+                <circle cx="160" cy="58" r="10" fill="#10b981" opacity="0.8"/>
+                <!-- Heart Shape -->
+                <path d="M160 63l-4-4a2.5 2.5 0 013.5-3.5l.5.5.5-.5a2.5 2.5 0 013.5 3.5l-4 4z" fill="#ffffff"/>
+                <rect x="140" y="72" width="40" height="4" rx="2" fill="#cbd5e1"/>
+                <rect x="135" y="88" width="50" height="28" rx="6" fill="#062e24" stroke="#047857"/>
+              </svg>
+            </div>
+            <span class="project-badge-top" style="color: var(--accent-emerald);">Internship Project</span>
+            <span class="project-date-top">08/2026 – 09/2026</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Annai Foundation Website</h3>
+            <p class="project-desc">
+              Designed and developed a responsive NGO &amp; community service web platform during internship training at Duhzine IT Solutions. Features social initiatives showcase, volunteer engagement, and accessible donation channels.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag-pill">Figma</span>
+              <span class="project-tag-pill">HTML5/CSS3</span>
+              <span class="project-tag-pill">JavaScript</span>
+              <span class="project-tag-pill">NGO Platform</span>
+              <span class="project-tag-pill">Duhzine IT Solutions</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-open-modal="annai">
+                <i class="fas fa-book-open"></i> Case Study
+              </button>
+              <a href="https://mukilanravi17.github.io/Annai-Foundation/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Live Website">
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+              <a href="https://www.figma.com/design/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=534-2&t=FbxvIJQ2KVulB54H-1" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="Open Figma Project">
+                <i class="fab fa-figma"></i> Prototype
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Threadloom Website (Internship Project) -->
+        <div class="project-card" data-category="internship uiux frontend">
+          <div class="project-banner">
+            <div class="project-svg-canvas" style="background: linear-gradient(135deg, #4c1d95 0%, #0f172a 100%);">
+              <svg width="220" height="140" viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Browser Frame with Fashion / Apparel Layout -->
+                <rect x="25" y="15" width="170" height="110" rx="8" fill="#0f172a" stroke="#c084fc" stroke-width="2"/>
+                <rect x="25" y="15" width="170" height="18" fill="#2e1065"/>
+                <circle cx="36" cy="24" r="3" fill="#ef4444"/>
+                <circle cx="46" cy="24" r="3" fill="#f59e0b"/>
+                <circle cx="56" cy="24" r="3" fill="#10b981"/>
+                <!-- Hero & Apparel Catalog Cards -->
+                <rect x="35" y="42" width="70" height="8" rx="2" fill="#e9d5ff"/>
+                <rect x="35" y="54" width="90" height="4" rx="2" fill="#94a3b8"/>
+                <rect x="35" y="62" width="55" height="4" rx="2" fill="#64748b"/>
+                <rect x="35" y="74" width="45" height="10" rx="5" fill="#a855f7"/>
+                <!-- Fashion / Loom Icon Graphic -->
+                <rect x="135" y="42" width="50" height="40" rx="6" fill="#2e1065" stroke="#7e22ce"/>
+                <circle cx="160" cy="58" r="10" fill="#a855f7" opacity="0.8"/>
+                <!-- Hanger / Thread icon -->
+                <path d="M160 52a3 3 0 013 3v2l6 5h-18l6-5v-2a3 3 0 013-3z" stroke="#ffffff" stroke-width="1.2" fill="none"/>
+                <rect x="140" y="72" width="40" height="4" rx="2" fill="#cbd5e1"/>
+                <rect x="135" y="88" width="50" height="28" rx="6" fill="#2e1065" stroke="#7e22ce"/>
+              </svg>
+            </div>
+            <span class="project-badge-top" style="color: var(--accent-purple);">Internship Project</span>
+            <span class="project-date-top">08/2026 – 09/2026</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Threadloom Website</h3>
+            <p class="project-desc">
+              Designed and developed a modern apparel &amp; textile brand website during internship training at Duhzine IT Solutions. Features fashion lookbooks, fabric showcases, seamless category navigation, and responsive mobile-first commerce layouts.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag-pill">HTML5/CSS3</span>
+              <span class="project-tag-pill">JavaScript</span>
+              <span class="project-tag-pill">Apparel &amp; Fashion</span>
+              <span class="project-tag-pill">Responsive Design</span>
+              <span class="project-tag-pill">Duhzine IT Solutions</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-open-modal="threadloom">
+                <i class="fas fa-book-open"></i> Case Study
+              </button>
+              <a href="https://mukilanravi17.github.io/Threadloom/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View Live Website">
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. EXPERIENCE & EDUCATION TIMELINE
+       ========================================================================== -->
+  <section class="section" id="journey" style="background: var(--bg-secondary);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-history"></i> Career Path</span>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">My professional journey in UI/UX design and foundational engineering background.</p>
+      </div>
+
+      <div class="journey-grid">
+        
+        <!-- Column 1: Professional Experience -->
+        <div class="journey-column">
+          <div class="journey-column-header">
+            <div class="journey-header-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>Professional Experience</h3>
+          </div>
+
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-dot"><i class="fas fa-circle" style="font-size: 8px; color: var(--primary);"></i></div>
+              <div class="timeline-card">
+                <div class="timeline-date">08/2026 – 09/2026</div>
+                <h4 class="timeline-role">UI/UX Design Intern</h4>
+                <div class="timeline-company">
+                  <span>Duhzine IT Solutions Private Limited</span>
+                  <span class="timeline-location">• Navalur, Chennai</span>
+                </div>
+                <div class="timeline-desc">
+                  <ul>
+                    <li>Completed 3 website redesign tasks during intensive internship training.</li>
+                    <li>Redesigned and developed 2 responsive websites using Figma, HTML, CSS, and JavaScript.</li>
+                    <li>Designed an advanced third website user interface using Figma design system.</li>
+                    <li>Conducted user research, stakeholder interviews, and usability testing to improve navigation, layout, and accessibility across all projects.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Education -->
+        <div class="journey-column">
+          <div class="journey-column-header">
+            <div class="journey-header-icon" style="background: var(--grad-cyan);"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Academic Background</h3>
+          </div>
+
+          <div class="timeline">
+            
+            <!-- Degree 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--secondary);"><i class="fas fa-circle" style="font-size: 8px; color: var(--secondary);"></i></div>
+              <div class="timeline-card">
+                <div class="timeline-date">08/2023 – 05/2026</div>
+                <h4 class="timeline-role">Bachelor of Engineering (B.E.)</h4>
+                <div class="timeline-company">
+                  <span>Computer Science and Engineering</span>
+                  <span class="timeline-location">• Rasipuram</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px;">
+                  Muthayammal Engineering College
+                </p>
+                <span class="timeline-score">CGPA: 6.7</span>
+              </div>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot" style="border-color: var(--secondary);"><i class="fas fa-circle" style="font-size: 8px; color: var(--secondary);"></i></div>
+              <div class="timeline-card">
+                <div class="timeline-date">07/2020 – 04/2023</div>
+                <h4 class="timeline-role">Diploma in Computer Engineering</h4>
+                <div class="timeline-company">
+                  <span>Computer Science and Engineering</span>
+                  <span class="timeline-location">• Rasipuram</span>
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 6px;">
+                  Muthayammal Polytechnic Institution
+                </p>
+                <span class="timeline-score">Distinction: 88%</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CERTIFICATES & CREDENTIALS
+       ========================================================================== -->
+  <section class="section" id="certificates">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-stamp"></i> Credentials</span>
+        <h2 class="section-title">Verified <span class="gradient-text">Certifications</span></h2>
+        <p class="section-subtitle">Continuous skill upgrades in design systems, UX methodologies, and modern web frameworks.</p>
+      </div>
+
+      <div class="cert-showcase-card">
+        
+        <div class="cert-info">
+          <div class="cert-badge-ribbon">
+            <i class="fas fa-certificate"></i> Verified Certificate of Completion
+          </div>
+          <h3 class="cert-title">Course on UI/UX Designing</h3>
+          <div class="cert-issuer">
+            <i class="fas fa-building" style="margin-right: 6px;"></i> LIVEWIRE (CADD Centre Training Services Pvt Ltd)
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--secondary-light); margin-bottom: 12px;">
+            <span><i class="fas fa-id-badge"></i> Student ID: <strong>CO260425Z530702</strong></span> &nbsp;•&nbsp;
+            <span><i class="fas fa-map-marker-alt"></i> Livewire Salem (New Bus Stand)</span>
+          </div>
+          <p class="cert-desc">
+            Completed professional hands-on training (05-May-2026 to 18-Aug-2026) in UI/UX design fundamentals: user research, wireframing, high-fidelity interactive prototyping, and usability testing alongside front-end web development using semantic HTML, CSS, and JavaScript. Authorized by R. Parthasarathy (Chairman) and M K Kannan (Centre Head).
+          </p>
+
+          <div class="cert-skills-pill-list">
+            <span class="badge-tag"><i class="fas fa-check" style="color: var(--accent-emerald);"></i> User Research &amp; Testing</span>
+            <span class="badge-tag"><i class="fas fa-check" style="color: var(--accent-emerald);"></i> Wireframing &amp; Prototyping</span>
+            <span class="badge-tag"><i class="fas fa-check" style="color: var(--accent-emerald);"></i> Figma Mastery</span>
+            <span class="badge-tag"><i class="fas fa-check" style="color: var(--accent-emerald);"></i> HTML5 • CSS3 • JS</span>
+            <span class="badge-tag"><i class="fas fa-check" style="color: var(--accent-emerald);"></i> Design Systems</span>
+          </div>
+        </div>
+
+        <div class="cert-visual-card">
+          <div class="cert-seal">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="cert-org-name">LIVEWIRE India</div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px;">Salem, New Bus Stand Center</p>
+          <div class="cert-verified-badge">
+            <i class="fas fa-shield-check"></i> Verified ID: CO260425Z530702
+          </div>
+          <div style="margin-top: 18px; display: flex; flex-direction: column; gap: 8px;">
+            <a href="certificate.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+              <i class="fas fa-file-pdf"></i> View Official Certificate PDF
+            </a>
+            <button class="btn btn-secondary btn-sm" data-open-modal="certlivewire" style="width: 100%;">
+              <i class="fas fa-expand"></i> View Certificate Details
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Interactive Resume Banner CTA -->
+      <div class="resume-banner">
+        <div class="resume-banner-text">
+          <h3>Need a comprehensive one-page resume?</h3>
+          <p>Explore my tailored, printable, and recruiter-friendly interactive resume document.</p>
+        </div>
+        <div class="resume-banner-actions">
+          <a href="resume.html" target="_blank" class="btn btn-primary">
+            <i class="fas fa-external-link-alt"></i> Open Full Resume
+          </a>
+          <a href="resume.html" target="_blank" class="btn btn-secondary" onclick="window.open('resume.html', '_blank'); setTimeout(()=>window.print(), 1000);">
+            <i class="fas fa-print"></i> Print / Save PDF
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CONTACT & HIRE ME SECTION
+       ========================================================================== -->
+  <section class="section" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Get in Touch</span>
+        <h2 class="section-title">Let's Build Something <br><span class="gradient-text">Exceptional Together</span></h2>
+        <p class="section-subtitle">Interested in UI/UX design collaboration, freelance projects, or full-time opportunities? Send me a message!</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info Cards -->
+        <div class="contact-info-col">
+          
+          <!-- Email -->
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <h4>Email Address</h4>
+              <a href="mailto:mukilanravikumar17@gmail.com">mukilanravikumar17@gmail.com</a>
+            </div>
+            <button class="copy-btn" data-copy="mukilanravikumar17@gmail.com" title="Copy email address">Copy</button>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-details">
+              <h4>Phone Number</h4>
+              <a href="tel:+916380234657">+91 6380234657</a>
+            </div>
+            <button class="copy-btn" data-copy="6380234657" title="Copy phone number">Copy</button>
+          </div>
+
+          <!-- Location -->
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <span>Namakkal &amp; Chennai, Tamil Nadu, India</span>
+            </div>
+          </div>
+
+          <!-- Professional Links -->
+          <div class="contact-item-card">
+            <div class="contact-icon-box"><i class="fas fa-share-alt"></i></div>
+            <div class="contact-details">
+              <h4>Profiles &amp; Repositories</h4>
+              <div style="display: flex; gap: 14px; margin-top: 6px;">
+                <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" style="color: var(--primary-light); font-size: 0.9rem;">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/MukilanRavi17" target="_blank" style="color: var(--secondary-light); font-size: 0.9rem;">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://portfolio.com/MukilanRavi17" target="_blank" style="color: var(--accent-pink); font-size: 0.9rem;">
+                  <i class="fas fa-globe"></i> Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            
+            <div class="form-group-grid">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email *</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="e.g. john@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="msgSubject" class="form-label">Subject</label>
+              <input type="text" id="msgSubject" class="form-input" placeholder="UI/UX Designer Role / Project Inquiry" value="Opportunity / Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="senderMsg" class="form-label">Your Message *</label>
+              <textarea id="senderMsg" class="form-textarea" placeholder="Describe your project, role, or how we can collaborate..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="nav-brand">
+          <div class="brand-badge" style="width: 32px; height: 32px; font-size: 0.85rem;">MR</div>
+          <span>Mukilan R</span>
+        </a>
+
+        <div class="footer-copyright">
+          Designed with <i class="fas fa-heart" style="color: #ec4899;"></i> &amp; coded with precision • Mukilan R &copy; 2026. All rights reserved.
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/MukilanRavi17" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:mukilanravikumar17@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================================================
+       10. DYNAMIC CASE STUDY MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle" style="font-size: 1.35rem;">Case Study Title</h3>
+          <span id="modalCategory" style="font-size: 0.82rem; color: var(--primary-light); font-family: var(--font-mono);">Category</span>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modalDynamicContent">
+        <!-- Dynamic Case Study Content injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
