@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukilan R | UI/UX Designer | Figma, HTML, CSS, JavaScript</title>
+  <meta name="description" content="Portfolio of Mukilan R, a UI/UX designer from Tamil Nadu. A mobile app case study and two client websites, designed in Figma and built in code.">
+  <link rel="canonical" href="https://mukilanravi17.github.io/My-Portfolio/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mukilanravi17.github.io/My-Portfolio/">
+  <meta property="og:title" content="Mukilan R | UI/UX Designer | Figma, HTML, CSS, JavaScript">
+  <meta property="og:description" content="Portfolio of Mukilan R, a UI/UX designer from Tamil Nadu. A mobile app case study and two client websites, designed in Figma and built in code.">
+  <meta property="og:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mukilan R | UI/UX Designer | Figma, HTML, CSS, JavaScript">
+  <meta name="twitter:description" content="Portfolio of Mukilan R, a UI/UX designer from Tamil Nadu. A mobile app case study and two client websites, designed in Figma and built in code.">
+  <meta name="twitter:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <!-- Theme script to prevent flash of unstyled theme -->
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme-preference');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme || systemTheme);
+      } catch(e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <!-- Structured Data JSON-LD Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mukilan R",
+    "jobTitle": "UI/UX Designer",
+    "url": "https://mukilanravi17.github.io/My-Portfolio/",
+    "email": "mukilanravikumar17@gmail.com",
+    "telephone": "+916380234657",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rasipuram, Namakkal",
+      "addressRegion": "Tamil Nadu",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/mukilan-ravi",
+      "https://github.com/MukilanRavi17"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Pill Navigation -->
+  <header class="nav-wrapper">
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <a href="./index.html" class="nav-monogram" aria-label="Mukilan R Home">
+        <span>MR</span>
+        <span class="mono-dot" aria-hidden="true"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html#work" class="nav-link">Work</a></li>
+        <li><a href="./about.html" class="nav-link">About</a></li>
+        <li><a href="./resume.html" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light color theme" aria-pressed="false">
+        <svg class="theme-icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg class="theme-icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+      </button>
+
+      <button type="button" id="mobile-menu-toggle" class="nav-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-panel">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <div id="mobile-menu-panel" class="mobile-menu-panel" hidden>
+        <ul class="mobile-menu-list">
+          <li><a href="./index.html#work" class="nav-link">Work</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./resume.html" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Bento Section -->
+    <section class="section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="grid-12">
+          
+          <!-- 1. Main Headline Cell (8 cols) -->
+          <div class="bento-card col-8 reveal" style="justify-content: center; min-height: 380px;">
+            <div class="mono-label" style="margin-bottom: var(--space-3);">UI/UX DESIGNER · TAMIL NADU, INDIA</div>
+            <h1 id="hero-title" class="display-title" style="margin-bottom: var(--space-4);">
+              I design in Figma and build in code<span class="accent-dot">.</span>
+            </h1>
+            <p class="body-lead text-muted" style="margin-bottom: var(--space-6); max-width: 60ch;">
+              I design mobile and web interfaces, from research and wireframes to high-fidelity UI, and build responsive sites in HTML, CSS and JavaScript.
+            </p>
+            <div class="btn-group">
+              <a href="#work" class="btn btn-primary">View selected work</a>
+              <a href="./resume.html" class="btn btn-secondary">Resume</a>
+            </div>
+          </div>
+
+          <!-- 2. Portrait Cell (4 cols) -->
+          <div class="bento-card col-4 portrait-card reveal">
+            <img src="./assets/img/profile.jpg" alt="Portrait of Mukilan R" class="portrait-img" width="400" height="480" fetchpriority="high">
+          </div>
+
+          <!-- 3. Status Cell (4 cols) -->
+          <div class="bento-card col-4 reveal" style="justify-content: center;">
+            <div class="status-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Open to UI/UX Designer roles.</span>
+            </div>
+          </div>
+
+          <!-- 4. Tools Cell (4 cols) -->
+          <div class="bento-card col-4 reveal">
+            <div class="mono-label" style="margin-bottom: var(--space-3);">TOOLS</div>
+            <div class="tag-pill-group">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">HTML</span>
+              <span class="tag-pill">CSS</span>
+              <span class="tag-pill">JavaScript</span>
+              <span class="tag-pill">Photoshop</span>
+              <span class="tag-pill">GitHub</span>
+            </div>
+          </div>
+
+          <!-- 5. Experience Cell (4 cols) -->
+          <div class="bento-card col-4 reveal" style="justify-content: space-between;">
+            <div>
+              <div class="mono-label" style="margin-bottom: var(--space-2);">EXPERIENCE</div>
+              <div style="font-weight: 700; font-size: 1.0625rem; color: var(--ink);">UI/UX Design Intern</div>
+              <div class="text-muted" style="font-size: 0.9375rem;">Duhzine IT Solutions, Chennai</div>
+              <div class="mono-label" style="margin-top: var(--space-1);">Aug–Sep 2026</div>
+            </div>
+            <div style="margin-top: var(--space-4);">
+              <a href="./resume.html" class="btn-link">Full resume <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section id="work" class="section" style="padding-top: 0;" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="mono-label">01 / WORK</div>
+          <h2 id="work-title" class="h2-title">Selected work<span class="accent-dot">.</span></h2>
+        </div>
+
+        <div class="grid-12">
+
+          <!-- Featured Card (8 cols): Vanguard Learn -->
+          <article class="bento-card bento-card-link col-8 reveal">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">CASE STUDY · MOBILE APP CONCEPT</div>
+            <h3 class="h2-title" style="margin-bottom: var(--space-3);">
+              <a href="./work/vanguard-learn.html" class="stretched-link">Vanguard Learn: AI Academic Advising and Skill Tracking</a>
+            </h3>
+            <p class="text-muted" style="margin-bottom: var(--space-4); max-width: 65ch;">
+              A mobile app concept that shows students where they stand academically, what to work on next, and how they compare with their major's benchmark. I did the research, problem definition, wireframes, UI and business strategy.
+            </p>
+            <div class="tag-pill-group" style="margin-bottom: var(--space-6);">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">Mobile</span>
+              <span class="tag-pill">EdTech</span>
+            </div>
+            
+            <div class="fig-box" style="margin-top: auto;">
+              <img src="./assets/img/vanguard/cover.png" alt="Vanguard Learn mobile app interface preview" width="800" height="400" loading="lazy">
+            </div>
+
+            <div style="margin-top: var(--space-4);">
+              <span class="btn-link">Read case study <span class="arrow" aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <!-- VBST Tour & Travels (4 cols) -->
+          <article class="bento-card bento-card-link col-4 reveal" style="justify-content: space-between;">
+            <div>
+              <div class="mono-label" style="margin-bottom: var(--space-2);">WEBSITE · INTERNSHIP</div>
+              <h3 class="h3-title" style="margin-bottom: var(--space-2);">
+                <a href="./work/vbst-tour-travels.html" class="stretched-link">VBST Tour & Travels</a>
+              </h3>
+              <p class="text-muted" style="font-size: 0.9375rem; margin-bottom: var(--space-4);">
+                A client travel website, designed in Figma and built in HTML, CSS and JavaScript.
+              </p>
+              <div class="tag-pill-group" style="margin-bottom: var(--space-4);">
+                <span class="tag-pill">Figma</span>
+                <span class="tag-pill">HTML</span>
+                <span class="tag-pill">CSS</span>
+                <span class="tag-pill">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="fig-box" style="margin: var(--space-2) 0 var(--space-4) 0;">
+              <img src="./assets/img/vbst/desktop-home.png" alt="VBST Tour and Travels preview" width="600" height="340" loading="lazy">
+            </div>
+
+            <div class="btn-group" style="margin-top: auto;">
+              <span class="btn-link">View project <span class="arrow" aria-hidden="true">→</span></span>
+              <a href="https://mukilanravi17.github.io/VBST-Tours-Travel/index.html" class="interactive-sublink btn-link" target="_blank" rel="noopener" style="font-size: 0.875rem; color: var(--muted);">
+                Live site <span class="sr-only">(opens in a new tab)</span>↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Annai Foundation (6 cols) -->
+          <article class="bento-card bento-card-link col-6 reveal" style="justify-content: space-between;">
+            <div>
+              <div class="mono-label" style="margin-bottom: var(--space-2);">WEBSITE · INTERNSHIP</div>
+              <h3 class="h3-title" style="margin-bottom: var(--space-2);">
+                <a href="./work/annai-foundation.html" class="stretched-link">Annai Foundation</a>
+              </h3>
+              <p class="text-muted" style="font-size: 0.9375rem; margin-bottom: var(--space-4);">
+                A client NGO website presenting initiatives, volunteer engagement and donation channels. Designed in Figma and built in code.
+              </p>
+              <div class="tag-pill-group" style="margin-bottom: var(--space-4);">
+                <span class="tag-pill">Figma</span>
+                <span class="tag-pill">HTML</span>
+                <span class="tag-pill">CSS</span>
+                <span class="tag-pill">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="fig-box" style="margin: var(--space-2) 0 var(--space-4) 0;">
+              <img src="./assets/img/annai/desktop-home.png" alt="Annai Foundation website preview" width="600" height="340" loading="lazy">
+            </div>
+
+            <div class="btn-group" style="margin-top: auto;">
+              <span class="btn-link">View project <span class="arrow" aria-hidden="true">→</span></span>
+              <a href="https://mukilanravi17.github.io/Annai-Foundation/" class="interactive-sublink btn-link" target="_blank" rel="noopener" style="font-size: 0.875rem; color: var(--muted);">
+                Live site <span class="sr-only">(opens in a new tab)</span>↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Instagram App Redesign (6 cols) -->
+          <article class="bento-card bento-card-link col-6 reveal" style="justify-content: space-between;">
+            <div>
+              <div class="mono-label" style="margin-bottom: var(--space-2);">PERSONAL PROJECT</div>
+              <h3 class="h3-title" style="margin-bottom: var(--space-2);">
+                <a href="./work/instagram-redesign.html" class="stretched-link">Instagram App Redesign</a>
+              </h3>
+              <p class="text-muted" style="font-size: 0.9375rem; margin-bottom: var(--space-4);">
+                A self-initiated redesign of 11 key screens, focused on navigation and visual hierarchy.
+              </p>
+              <div class="tag-pill-group" style="margin-bottom: var(--space-4);">
+                <span class="tag-pill">Figma</span>
+                <span class="tag-pill">Mobile</span>
+              </div>
+            </div>
+
+            <div class="fig-box" style="margin: var(--space-2) 0 var(--space-4) 0;">
+              <img src="./assets/img/instagram/screens-overview.png" alt="Instagram App Redesign preview" width="600" height="340" loading="lazy">
+            </div>
+
+            <div class="btn-group" style="margin-top: auto;">
+              <span class="btn-link">View project <span class="arrow" aria-hidden="true">→</span></span>
+              <a href="https://www.figma.com/design/QrtfBuWVhPEFG4kiJtTDox/instagram--Redesign-?node-id=0-1&t=z6F2PrIrV3DdHt99-1" class="interactive-sublink btn-link" target="_blank" rel="noopener" style="font-size: 0.875rem; color: var(--muted);">
+                Figma prototype <span class="sr-only">(opens in a new tab)</span>↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section" style="padding-top: 0;" aria-labelledby="about-preview-title">
+      <div class="container">
+        <div class="bento-card reveal" style="padding: var(--space-8);">
+          <div class="mono-label" style="margin-bottom: var(--space-2);">02 / ABOUT</div>
+          <h2 id="about-preview-title" class="h2-title" style="margin-bottom: var(--space-4);">Design grounded in frontend code<span class="accent-dot">.</span></h2>
+          <p class="body-lead text-muted prose" style="margin-bottom: var(--space-6);">
+            I'm a UI/UX designer with a computer science degree, based in Tamil Nadu. I design in Figma and build with HTML, CSS and JavaScript, so I can take a project from wireframe to a working page.
+          </p>
+          <div>
+            <a href="./about.html" class="btn btn-secondary">More about me <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="mono-label">04 / CONTACT</div>
+          <h2 class="h2-title" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Get in touch<span class="accent-dot">.</span></h2>
+          <p class="body-lead text-muted" style="margin-bottom: var(--space-6); max-width: 50ch;">
+            I'm looking for a UI/UX Designer role. Email is the quickest way to reach me.
+          </p>
+          
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">EMAIL</span>
+              <a href="mailto:mukilanravikumar17@gmail.com" style="font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">mukilanravikumar17@gmail.com</a>
+              <button type="button" class="copy-btn copy-email-btn" data-email="mukilanravikumar17@gmail.com" aria-label="Copy email address to clipboard">Copy email</button>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">PHONE</span>
+              <a href="tel:+916380234657" style="font-weight: 500;">+91 6380234657</a>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">LOCATION</span>
+              <span>Rasipuram, Namakkal (DT), Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mono-label" style="margin-bottom: var(--space-4);">PROFILES</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" rel="noopener">
+                LinkedIn
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com/MukilanRavi17" target="_blank" rel="noopener">
+                GitHub
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Mukilan R · UI/UX Designer · Tamil Nadu, India · © 2026 Mukilan R</div>
+        <div id="copy-status-live" class="sr-only" aria-live="polite"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

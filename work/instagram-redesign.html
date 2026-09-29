@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram App Redesign: Navigation and Visual Hierarchy | Mukilan R</title>
+  <meta name="description" content="A self-initiated redesign of 11 Instagram screens in Figma, focused on navigation, visual hierarchy and content discovery.">
+  <link rel="canonical" href="https://mukilanravi17.github.io/My-Portfolio/work/instagram-redesign.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mukilanravi17.github.io/My-Portfolio/work/instagram-redesign.html">
+  <meta property="og:title" content="Instagram App Redesign: Navigation and Visual Hierarchy | Mukilan R">
+  <meta property="og:description" content="A self-initiated redesign of 11 Instagram screens in Figma, focused on navigation, visual hierarchy and content discovery.">
+  <meta property="og:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instagram App Redesign: Navigation and Visual Hierarchy | Mukilan R">
+  <meta name="twitter:description" content="A self-initiated redesign of 11 Instagram screens in Figma, focused on navigation, visual hierarchy and content discovery.">
+  <meta name="twitter:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme-preference');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme || systemTheme);
+      } catch(e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Pill Navigation -->
+  <header class="nav-wrapper">
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <a href="../index.html" class="nav-monogram" aria-label="Mukilan R Home">
+        <span>MR</span>
+        <span class="mono-dot" aria-hidden="true"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#work" class="nav-link" aria-current="page">Work</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../resume.html" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light color theme" aria-pressed="false">
+        <svg class="theme-icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg class="theme-icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+      </button>
+
+      <button type="button" id="mobile-menu-toggle" class="nav-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-panel">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <div id="mobile-menu-panel" class="mobile-menu-panel" hidden>
+        <ul class="mobile-menu-list">
+          <li><a href="../index.html#work" class="nav-link">Work</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../resume.html" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article class="section">
+      <div class="container">
+        
+        <!-- Header -->
+        <div style="max-width: var(--reading-width); margin-bottom: var(--space-8);">
+          <div class="mono-label" style="margin-bottom: var(--space-2);">PERSONAL PROJECT</div>
+          <h1 class="h1-title" style="margin-bottom: var(--space-3);">Instagram App Redesign<span class="accent-dot">.</span></h1>
+          <p class="body-lead text-muted" style="margin-bottom: var(--space-6);">
+            A personal project redesigning 11 key screens, focused on navigation and content discovery.
+          </p>
+          
+          <div class="btn-group">
+            <a href="https://www.figma.com/design/QrtfBuWVhPEFG4kiJtTDox/instagram--Redesign-?node-id=0-1&t=z6F2PrIrV3DdHt99-1" class="btn btn-primary" target="_blank" rel="noopener">
+              Figma prototype <span class="sr-only">(opens in a new tab)</span>↗
+            </a>
+            <a href="../index.html#work" class="btn-link">← Back to work</a>
+          </div>
+        </div>
+
+        <!-- Overview Grid -->
+        <div class="overview-grid">
+          <div class="overview-cell">
+            <span class="mono-label">TYPE</span>
+            <span class="overview-value">Personal project</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">TIMELINE</span>
+            <span class="overview-value">August 2026</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">ROLE</span>
+            <span class="overview-value">Solo designer</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">TOOLS</span>
+            <span class="overview-value">Figma</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">TESTING</span>
+            <span class="overview-value">None, prototype only</span>
+          </div>
+        </div>
+
+        <!-- Hero Cover Image -->
+        <div class="fig-box" style="margin-top: var(--space-6);">
+          <img src="../assets/img/instagram/screens-overview.png" alt="Instagram App Redesign 11 screens multi-device preview" width="1200" height="600" fetchpriority="high">
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="prose" style="max-width: var(--reading-width); margin-top: var(--space-8);">
+          
+          <section>
+            <h2 class="h2-title" style="margin-bottom: var(--space-3);">What I changed</h2>
+            <p>
+              Restructured the layout and navigation across 11 key screens. Improved visual hierarchy and consistency. Refined interaction patterns and screen flow to make content discovery more intuitive. Simplified navigation and streamlined key actions.
+            </p>
+          </section>
+
+          <!-- TODO: Why this project -->
+
+          <!-- TODO: One before and after: my strongest example, written as "I changed X to Y because Z", with before and after images -->
+
+          <!-- Screens Gallery -->
+          <div style="margin-top: var(--space-12);">
+            <div class="mono-label" style="margin-bottom: var(--space-4);">REDESIGNED CORE SCREENS & FLOWS</div>
+            
+            <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-0-homescreen.png" alt="Instagram launcher icon and mobile homescreen" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>01. App Launch & Homescreen:</strong> Modern minimal icon design and quick launcher presentation.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-1-login.png" alt="Instagram minimalist login and authentication screen" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>02. Login Page:</strong> Clean, distraction-free onboarding with streamlined credential input and account switching.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-2-feed.png" alt="Instagram redesigned home feed and custom action bar" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>03. Homepage (Feed):</strong> Refined story rings, streamlined post typography, and enhanced engagement bar with direct metrics.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-7-stories.png" alt="Instagram fullscreen stories viewer interface" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>04. Fullscreen Stories:</strong> Edge-to-edge story presentation with unified reply input pill, reaction heart, and direct message share.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-9-story-editor.png" alt="Instagram story creator and tool editor interface" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>05. Story Creator & Editing Tools:</strong> Creative canvas with quick stickers, typography styles, filters, and immediate audience sharing controls.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-3-reels.png" alt="Instagram redesigned Reels interface - standard playback" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>06. Reels Player (Main View):</strong> Immersive video playback with integrated sidebar actions, creator follow toggle, and direct repost indicators.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-3b-reels.png" alt="Instagram redesigned Reels interface - secondary video feed" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>07. Reels Player (Alternate Feed):</strong> Seamless vertical transition with high-contrast media rendering, caption hierarchy, and persistent bottom navigation.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-4-explore.png" alt="Instagram search and explore discovery grid" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>08. Search Page (Explore):</strong> Integrated smart search bar with categorized 3-column discovery media grid.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-5-chats.png" alt="Instagram direct messaging and notes interface" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>09. Direct Messages (Chats) & Notes:</strong> Quick-status notes tray, requests filter, and active conversation thread listing.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-6-notifications.png" alt="Instagram activity and notifications hub" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>10. Activity & Notifications Hub:</strong> Segmented timeline (Today, Last 7 days, Last 30 days) with inline confirmation actions.</p>
+              </div>
+
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/instagram/screen-8-app-switcher.png" alt="Instagram app switcher and multi-tasking preview" style="max-width: 320px; margin: 0 auto;" width="320" height="680" loading="lazy">
+                <p class="fig-caption" style="text-align: center;"><strong>11. Multi-Tasking & App State:</strong> Seamless card transition and app management view.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="project-pagination" aria-label="Project navigation">
+          <div>
+            <span class="mono-label" style="display: block; margin-bottom: var(--space-1);">PREVIOUS</span>
+            <a href="./annai-foundation.html" class="btn-link">← Annai Foundation</a>
+          </div>
+          <div style="text-align: right;">
+            <span class="mono-label" style="display: block; margin-bottom: var(--space-1);">NEXT</span>
+            <a href="./vanguard-learn.html" class="btn-link">Vanguard Learn <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </nav>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- Global Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="mono-label">04 / CONTACT</div>
+          <h2 class="h2-title" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Get in touch<span class="accent-dot">.</span></h2>
+          <p class="body-lead text-muted" style="margin-bottom: var(--space-6); max-width: 50ch;">
+            I'm looking for a UI/UX Designer role. Email is the quickest way to reach me.
+          </p>
+          
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">EMAIL</span>
+              <a href="mailto:mukilanravikumar17@gmail.com" style="font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">mukilanravikumar17@gmail.com</a>
+              <button type="button" class="copy-btn copy-email-btn" data-email="mukilanravikumar17@gmail.com" aria-label="Copy email address to clipboard">Copy email</button>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">PHONE</span>
+              <a href="tel:+916380234657" style="font-weight: 500;">+91 6380234657</a>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">LOCATION</span>
+              <span>Rasipuram, Namakkal (DT), Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mono-label" style="margin-bottom: var(--space-4);">PROFILES</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" rel="noopener">
+                LinkedIn
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com/MukilanRavi17" target="_blank" rel="noopener">
+                GitHub
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Mukilan R · UI/UX Designer · Tamil Nadu, India · © 2026 Mukilan R</div>
+        <div id="copy-status-live" class="sr-only" aria-live="polite"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

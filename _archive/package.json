@@ -1,0 +1,25 @@
+{
+  "name": "mukilan-portfolio-backend",
+  "version": "1.0.0",
+  "description": "Backend API server for Mukilan R's UI/UX Portfolio and Contact Form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "contact-form",
+    "express",
+    "nodejs",
+    "nodemailer"
+  ],
+  "author": "Mukilan R",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  }
+}

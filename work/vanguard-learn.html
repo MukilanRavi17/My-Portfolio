@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanguard Learn: AI Academic Advising and Skill Tracking | Mukilan R</title>
+  <meta name="description" content="UI/UX case study of Vanguard Learn, a mobile app concept that combines degree progress, skill tracking and a Socratic AI tutor. Research, wireframes, UI and business strategy.">
+  <link rel="canonical" href="https://mukilanravi17.github.io/My-Portfolio/work/vanguard-learn.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://mukilanravi17.github.io/My-Portfolio/work/vanguard-learn.html">
+  <meta property="og:title" content="Vanguard Learn: AI Academic Advising and Skill Tracking | Mukilan R">
+  <meta property="og:description" content="UI/UX case study of Vanguard Learn, a mobile app concept that combines degree progress, skill tracking and a Socratic AI tutor. Research, wireframes, UI and business strategy.">
+  <meta property="og:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vanguard Learn: AI Academic Advising and Skill Tracking | Mukilan R">
+  <meta name="twitter:description" content="UI/UX case study of Vanguard Learn, a mobile app concept that combines degree progress, skill tracking and a Socratic AI tutor. Research, wireframes, UI and business strategy.">
+  <meta name="twitter:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
+
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme-preference');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme || systemTheme);
+      } catch(e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Pill Navigation -->
+  <header class="nav-wrapper">
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <a href="../index.html" class="nav-monogram" aria-label="Mukilan R Home">
+        <span>MR</span>
+        <span class="mono-dot" aria-hidden="true"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#work" class="nav-link" aria-current="page">Work</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../resume.html" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light color theme" aria-pressed="false">
+        <svg class="theme-icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg class="theme-icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+      </button>
+
+      <button type="button" id="mobile-menu-toggle" class="nav-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-panel">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <div id="mobile-menu-panel" class="mobile-menu-panel" hidden>
+        <ul class="mobile-menu-list">
+          <li><a href="../index.html#work" class="nav-link">Work</a></li>
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="../resume.html" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <header class="section" style="padding-bottom: var(--space-8);">
+      <div class="container">
+        <div class="mono-label" style="margin-bottom: var(--space-2);">CASE STUDY · MOBILE APP CONCEPT</div>
+        <h1 class="h1-title" style="margin-bottom: var(--space-4); max-width: 25ch;">
+          Vanguard Learn: AI Academic Advising and Skill Tracking<span class="accent-dot">.</span>
+        </h1>
+        <p class="body-lead text-muted" style="max-width: 68ch; margin-bottom: var(--space-6);">
+          A mobile app concept that shows students where they stand, what to work on next, and how they compare with their major's benchmark.
+        </p>
+        
+        <div class="btn-group" style="margin-bottom: var(--space-8);">
+          <a href="https://www.figma.com/proto/dCB4lZVm5tDboS9xVyLwNJ/VBST-Tour----Travels?node-id=192-5&t=pTkU6W5gL5r11Rhb-1" class="btn btn-primary" target="_blank" rel="noopener">
+            View Figma prototype <span class="sr-only">(opens in a new tab)</span>↗
+          </a>
+          <a href="../index.html#work" class="btn-link">← Back to work</a>
+        </div>
+
+        <!-- Hero Cover Image -->
+        <div class="fig-box">
+          <img src="../assets/img/vanguard/cover.png" alt="Vanguard Learn mobile app screens preview" width="1200" height="600" fetchpriority="high">
+        </div>
+
+        <!-- 6-Cell Overview Grid -->
+        <div class="overview-grid">
+          <div class="overview-cell">
+            <span class="mono-label">PROJECT</span>
+            <span class="overview-value">Mobile app concept (iOS-style UI)</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">CONTEXT</span>
+            <span class="overview-value">Internship project at Duhzine IT Solutions <!-- TODO: assigned brief or my own idea? --></span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">ROLE</span>
+            <span class="overview-value">Research, problem definition, wireframes, high-fidelity UI, business strategy</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">TIMELINE</span>
+            <span class="overview-value">September 2026</span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">TEAM</span>
+            <span class="overview-value">Solo designer <!-- TODO: solo or with others? --></span>
+          </div>
+          <div class="overview-cell">
+            <span class="mono-label">TOOLS</span>
+            <span class="overview-value">Figma</span>
+          </div>
+        </div>
+
+        <!-- Callout -->
+        <div class="callout" role="note">
+          <div class="callout-title">Read this first</div>
+          <p style="font-size: 0.9375rem; color: var(--ink);">
+            This is a concept designed with sample data. It has not been built or tested with users. All figures shown in the screens are sample data.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Two-Column Case Study Body -->
+    <div class="container section-tight">
+      <div class="layout-with-sidebar">
+        
+        <!-- Left Sidebar: Table of Contents -->
+        <aside class="sticky-sidebar">
+          <details class="toc-disclosure">
+            <summary>On this page</summary>
+            <ul class="toc-disclosure-list">
+              <li><a href="#section-01" class="btn-link" style="font-size: 0.875rem;">01 / Problem & Gaps</a></li>
+              <li><a href="#section-02" class="btn-link" style="font-size: 0.875rem;">02 / Goals</a></li>
+              <li><a href="#section-03" class="btn-link" style="font-size: 0.875rem;">03 / Research & Personas</a></li>
+              <li><a href="#section-04" class="btn-link" style="font-size: 0.875rem;">04 / Wireframes</a></li>
+              <li><a href="#section-05" class="btn-link" style="font-size: 0.875rem;">05 / Evolution</a></li>
+              <li><a href="#section-06" class="btn-link" style="font-size: 0.875rem;">06 / Final Screens</a></li>
+              <li><a href="#section-07" class="btn-link" style="font-size: 0.875rem;">07 / Business Strategy</a></li>
+              <li><a href="#section-08" class="btn-link" style="font-size: 0.875rem;">08 / Future Scope & Tests</a></li>
+            </ul>
+          </details>
+
+          <nav class="toc-nav" aria-label="Case study sections">
+            <div class="mono-label" style="margin-bottom: var(--space-3);">CONTENTS</div>
+            <a href="#section-01" class="toc-link">01 / Problem</a>
+            <a href="#section-02" class="toc-link">02 / Goals</a>
+            <a href="#section-03" class="toc-link">03 / Research</a>
+            <a href="#section-04" class="toc-link">04 / Wireframes</a>
+            <a href="#section-05" class="toc-link">05 / Evolution</a>
+            <a href="#section-06" class="toc-link">06 / The Six Screens</a>
+            <a href="#section-07" class="toc-link">07 / Business & Feasibility</a>
+            <a href="#section-08" class="toc-link">08 / Future Scope</a>
+          </nav>
+        </aside>
+
+        <!-- Right Content Body -->
+        <div class="prose" style="max-width: var(--reading-width);">
+
+          <!-- 01 Problem -->
+          <section id="section-01" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">01 / PROBLEM</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">Students can't tell if they're on track, or what to do next</h2>
+            <p>
+              Students piece together their standing from transcripts, degree audits, online courses and advisor meetings. Generic AI tools know nothing about their actual courses. Five gaps stood out:
+            </p>
+            <ul>
+              <li>No single view of academic records, course progress and skills</li>
+              <li>No benchmark to compare against a target major or role</li>
+              <li>Generic advice that ignores a student's measured strengths</li>
+              <li>Scores that don't say which skill to work on next</li>
+              <li>No habit feedback (streaks, targets), so effort stalls</li>
+            </ul>
+            <div class="callout" style="border-left-color: var(--border); background: var(--surface-raised);">
+              <p style="font-weight: 600; color: var(--ink);">
+                The question the app answers: "Am I ready for what I'm aiming at, and what should I do next?"
+              </p>
+            </div>
+          </section>
+
+          <!-- 02 Goals -->
+          <section id="section-02" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">02 / GOALS</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">Project goals</h2>
+            <ul>
+              <li>Give students one dashboard for GPA, credits and subject mastery</li>
+              <li>Turn a readiness score into named next actions</li>
+              <li>Tutor through questions instead of handing out answers</li>
+              <li>Build study consistency with streaks and weekly targets</li>
+              <li>Compare a student's skills with their major's expectations</li>
+              <li>Lay the groundwork for career and role recommendations later</li>
+            </ul>
+          </section>
+
+          <!-- 03 Research -->
+          <section id="section-03" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">03 / RESEARCH</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">Four user groups and an audit of a reference app</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-6);">
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div class="mono-label" style="color: var(--accent); margin-bottom: var(--space-2);">WHAT I DID</div>
+                <p style="font-size: 0.9375rem;">
+                  I analysed four user groups and audited an existing academic-progress and AI-tutoring app screen by screen. <!-- TODO: name the reference app -->
+                </p>
+              </div>
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div class="mono-label" style="margin-bottom: var(--space-2);">WHAT I DIDN'T DO</div>
+                <p style="font-size: 0.9375rem;">
+                  Interviews, surveys or usability tests. The findings below are patterns from the audit, not tested results.
+                </p>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4);">
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">Undecided undergraduate</div>
+                <p class="text-muted" style="font-size: 0.9375rem; margin-top: 2px;">Wants evidence-based direction, not generic advice.</p>
+              </div>
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">Job-ready aspirant</div>
+                <p class="text-muted" style="font-size: 0.9375rem; margin-top: 2px;">Wants to benchmark skills and close specific gaps before placements.</p>
+              </div>
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">Working upskiller</div>
+                <p class="text-muted" style="font-size: 0.9375rem; margin-top: 2px;">Needs a guided, self-paced path with limited time.</p>
+              </div>
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">Mentor (faculty, TA, placement staff)</div>
+                <p class="text-muted" style="font-size: 0.9375rem; margin-top: 2px;">Needs one view of many students to decide who needs help.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 04 Wireframes -->
+          <section id="section-04" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">04 / DECISIONS & WIREFRAMES</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">From audit findings to wireframes</h2>
+            <p>
+              Each audit observation became a design decision. I then sketched six wireframes covering the two core flows, career and skill recommendation and skill tracking, to test the structure before styling anything.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="table-wrapper">
+              <table class="data-table">
+                <caption class="sr-only">Comparison of audit observations and corresponding design decisions</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" style="width: 45%;">What the audit showed</th>
+                    <th scope="col" style="width: 55%;">What I designed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>One composite score reads more clearly than scattered metrics</td>
+                    <td>The home screen leads with GPA, degree roadmap index and one readiness score</td>
+                  </tr>
+                  <tr>
+                    <td>A percentage alone doesn't say what to do</td>
+                    <td>Status chips (Mastered, In Progress, High Growth) and named next steps</td>
+                  </tr>
+                  <tr>
+                    <td>A benchmark makes a gap obvious</td>
+                    <td>A five-axis radar of current level against the major benchmark</td>
+                  </tr>
+                  <tr>
+                    <td>Habit mechanics sustain effort</td>
+                    <td>Streaks, a weekly study target and a daily cadence grid</td>
+                  </tr>
+                  <tr>
+                    <td>Help works best when tied to a current goal</td>
+                    <td>A tutor scoped to one course and exam</td>
+                  </tr>
+                  <tr>
+                    <td>Each role expects a different journey</td>
+                    <td>Role selection on the first screen</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Horizontal Scroll-Snap Wireframes Row -->
+            <div class="fig-box">
+              <div class="scroll-snap-row" tabindex="0" aria-label="Six low-fidelity wireframes scrollable gallery">
+                <div class="scroll-snap-item">
+                  <img src="../assets/img/vanguard/wireframes-1.png" alt="Lo-Fi Wireframe 01: Role Selection and SSO" width="320" height="560" loading="lazy">
+                </div>
+                <div class="scroll-snap-item">
+                  <img src="../assets/img/vanguard/wireframes-2.png" alt="Lo-Fi Wireframe 02: Multi-Provider Sign In" width="320" height="560" loading="lazy">
+                </div>
+                <div class="scroll-snap-item">
+                  <img src="../assets/img/vanguard/wireframes-3.png" alt="Lo-Fi Wireframe 03: Progress Dashboard" width="320" height="560" loading="lazy">
+                </div>
+                <div class="scroll-snap-item">
+                  <img src="../assets/img/vanguard/wireframes-4.png" alt="Lo-Fi Wireframe 04: Socratic AI Tutor" width="320" height="560" loading="lazy">
+                </div>
+                <div class="scroll-snap-item">
+                  <img src="../assets/img/vanguard/wireframes-5.png" alt="Lo-Fi Wireframe 05: Curriculum and Streak" width="320" height="560" loading="lazy">
+                </div>
+                <div class="scroll-snap-item">
+                  <img src="../assets/img/vanguard/wireframes-6.png" alt="Lo-Fi Wireframe 06: Mastery Radar and Diagnostic" width="320" height="560" loading="lazy">
+                </div>
+              </div>
+              <p class="fig-caption">Six low-fidelity wireframes for the recommendation and skill-tracking flows. <!-- TODO: one sentence on what I was testing with them --></p>
+            </div>
+          </section>
+
+          <!-- 05 Evolution -->
+          <section id="section-05" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">05 / EVOLUTION</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">From wireframe to final screen</h2>
+            
+            <div class="pair-grid">
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/vanguard/pair-1-wire.png" alt="Wireframe of Progress Dashboard" width="320" height="560" loading="lazy">
+              </div>
+              <div class="fig-box" style="margin: 0;">
+                <img src="../assets/img/vanguard/pair-1-final.png" alt="Final High Fidelity Progress Dashboard UI" width="320" height="560" loading="lazy">
+              </div>
+            </div>
+            <!-- TODO: Captions omitted because TODOs are unfilled -->
+          </section>
+
+          <!-- 06 The Six Screens -->
+          <section id="section-06" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">06 / FINAL SCREENS</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">The six screens</h2>
+
+            <div class="screen-blocks-list">
+              <!-- Screen 1 -->
+              <div class="screen-block">
+                <div class="screen-block-media">
+                  <img src="../assets/img/vanguard/screen-1-create-account.png" alt="Screen 1: Create Account with role selection and SSO" width="320" height="520" loading="lazy">
+                </div>
+                <div class="screen-block-content">
+                  <div class="mono-label">SCREEN 01</div>
+                  <h3 class="h3-title">Create account</h3>
+                  <p class="text-muted">
+                    Role selection (Undergrad, Researcher, Faculty/TA) comes first so the app can tailor everything after it. Campus SSO is the main path, with email as a fallback. The institution is auto-detected to cut typing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Screen 2 -->
+              <div class="screen-block">
+                <div class="screen-block-media">
+                  <img src="../assets/img/vanguard/screen-2-sign-in.png" alt="Screen 2: Sign in portal with institutional credentials and biometrics" width="320" height="520" loading="lazy">
+                </div>
+                <div class="screen-block-content">
+                  <div class="mono-label">SCREEN 02</div>
+                  <h3 class="h3-title">Sign in</h3>
+                  <p class="text-muted">
+                    Options run from the recommended university login, to Google and Apple, to email and password, to biometrics. This covers institutions with different IT setups, and only accredited institutional emails are accepted.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Screen 3 -->
+              <div class="screen-block">
+                <div class="screen-block-media">
+                  <img src="../assets/img/vanguard/screen-3-progress.png" alt="Screen 3: Progress dashboard with GPA, degree roadmap index, and competencies" width="320" height="520" loading="lazy">
+                </div>
+                <div class="screen-block-content">
+                  <div class="mono-label">SCREEN 03</div>
+                  <h3 class="h3-title">Progress (home)</h3>
+                  <p class="text-muted">
+                    GPA, a Dean's List badge and a degree-roadmap ring sit above subject bars with status chips. The summary comes first and detail follows on scroll. An "Audit Log" link shows how scores are calculated, to build trust.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Screen 4 -->
+              <div class="screen-block">
+                <div class="screen-block-media">
+                  <img src="../assets/img/vanguard/screen-4-tutor.png" alt="Screen 4: AI Tutor with Socratic learning mode and worked ML regularization diagram" width="320" height="520" loading="lazy">
+                </div>
+                <div class="screen-block-content">
+                  <div class="mono-label">SCREEN 04</div>
+                  <h3 class="h3-title">AI tutor</h3>
+                  <p class="text-muted">
+                    Scoped to one course and exam (CS 320 Machine Learning, Exam 2 prep), with Socratic, Quiz Drills and Code & Essay modes. A worked example pairs a diagram of L1 and L2 constraints with a numbered explanation, so the answer is not plain text.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Screen 5 -->
+              <div class="screen-block">
+                <div class="screen-block-media">
+                  <img src="../assets/img/vanguard/screen-5-curriculum.png" alt="Screen 5: Curriculum view with 14-day streak and weekly study cadence grid" width="320" height="520" loading="lazy">
+                </div>
+                <div class="screen-block-content">
+                  <div class="mono-label">SCREEN 05</div>
+                  <h3 class="h3-title">Curriculum</h3>
+                  <p class="text-muted">
+                    A degree-track summary, a 14-day streak, a weekly target (18 of 20 hours) and a Monday-to-Sunday cadence grid. Long-term degree status and short-term course milestones share one screen.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Screen 6 -->
+              <div class="screen-block">
+                <div class="screen-block-media">
+                  <img src="../assets/img/vanguard/screen-6-mastery.png" alt="Screen 6: Mastery diagnosis with 5-axis benchmark radar" width="320" height="520" loading="lazy">
+                </div>
+                <div class="screen-block-content">
+                  <div class="mono-label">SCREEN 06</div>
+                  <h3 class="h3-title">Mastery</h3>
+                  <p class="text-muted">
+                    A verified diagnostic (82% readiness) with a specific note ("3 critical concepts to review before midterms") above the five-axis radar against the major benchmark. The score always comes with a next step.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="mono-label" style="margin-top: var(--space-4);">Note: All figures are sample data.</p>
+          </section>
+
+          <!-- 07 Business and Feasibility -->
+          <section id="section-07" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">07 / FEASIBILITY</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">Business and feasibility (proposed)</h2>
+            <p style="margin-bottom: var(--space-6);">
+              I wrote a strategy document alongside the design to test whether the product could work in practice.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); margin-bottom: var(--space-6);">
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div class="mono-label" style="color: var(--accent); margin-bottom: var(--space-2);">REVENUE ORDER</div>
+                <p style="font-size: 0.9375rem;">
+                  Campus licensing for universities first, then premium student subscriptions, then verified placement services once enough verified data exists. Each stage makes the next one easier.
+                </p>
+              </div>
+
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div class="mono-label" style="color: var(--accent); margin-bottom: var(--space-2);">ROLLOUT</div>
+                <p style="font-size: 0.9375rem;">
+                  Prestige institutions first, then mid-tier universities, then international and community colleges.
+                </p>
+              </div>
+
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div class="mono-label" style="color: var(--accent); margin-bottom: var(--space-2);">SUCCESS MEASURES</div>
+                <p style="font-size: 0.9375rem;">
+                  Weekly-target completion, 7/14/30-day streak retention, weekly readiness change, whether momentum predicts end-of-semester GPA, licence renewals, and free-to-premium conversion.
+                </p>
+              </div>
+
+              <div class="bento-card" style="padding: var(--space-4);">
+                <div class="mono-label" style="color: var(--accent); margin-bottom: var(--space-2);">PROPOSED TECHNOLOGY</div>
+                <p style="font-size: 0.9375rem;">
+                  A cross-platform mobile app, REST/GraphQL API, SAML/OAuth2 login, a retrieval-based tutor over course material, and encrypted storage with FERPA-aligned handling.
+                </p>
+              </div>
+            </div>
+
+            <p style="font-size: 0.9375rem; color: var(--muted);">
+              <strong>Main risks:</strong> AI accuracy, dependence on university login systems, streak pressure on some students, biased scoring, and data privacy.
+            </p>
+          </section>
+
+          <!-- 08 What's not done & What I'd test next -->
+          <section id="section-08" style="margin-bottom: var(--space-16);">
+            <div class="mono-label" style="margin-bottom: var(--space-2);">08 / NEXT STEPS</div>
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">What's not done, and what I'd test next</h2>
+            <p>
+              <strong>Not done:</strong> Usability testing, real data, and career-role mapping (future scope, which is why the title says academic advising).
+            </p>
+            <p style="margin-top: var(--space-3);">
+              <strong>Next test:</strong> Five students, three tasks: find what to study before the midterm, explain what the radar shows, and set a weekly target. Watch where they hesitate.
+            </p>
+          </section>
+
+          <!-- 09 Reflection: TODO: 2-3 sentences in my own words on what I learned and what I'd change (hidden since unfilled) -->
+
+        </div>
+
+      </div>
+
+      <!-- Previous / Next Project Pagination -->
+      <nav class="project-pagination" aria-label="Project navigation">
+        <div>
+          <span class="mono-label" style="display: block; margin-bottom: var(--space-1);">PREVIOUS</span>
+          <a href="../index.html#work" class="btn-link">← All Selected Work</a>
+        </div>
+        <div style="text-align: right;">
+          <span class="mono-label" style="display: block; margin-bottom: var(--space-1);">NEXT PROJECT</span>
+          <a href="./vbst-tour-travels.html" class="btn-link">VBST Tour & Travels <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </nav>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="mono-label">04 / CONTACT</div>
+          <h2 class="h2-title" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Get in touch<span class="accent-dot">.</span></h2>
+          <p class="body-lead text-muted" style="margin-bottom: var(--space-6); max-width: 50ch;">
+            I'm looking for a UI/UX Designer role. Email is the quickest way to reach me.
+          </p>
+          
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">EMAIL</span>
+              <a href="mailto:mukilanravikumar17@gmail.com" style="font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">mukilanravikumar17@gmail.com</a>
+              <button type="button" class="copy-btn copy-email-btn" data-email="mukilanravikumar17@gmail.com" aria-label="Copy email address to clipboard">Copy email</button>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">PHONE</span>
+              <a href="tel:+916380234657" style="font-weight: 500;">+91 6380234657</a>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">LOCATION</span>
+              <span>Rasipuram, Namakkal (DT), Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mono-label" style="margin-bottom: var(--space-4);">PROFILES</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" rel="noopener">
+                LinkedIn
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com/MukilanRavi17" target="_blank" rel="noopener">
+                GitHub
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Mukilan R · UI/UX Designer · Tamil Nadu, India · © 2026 Mukilan R</div>
+        <div id="copy-status-live" class="sr-only" aria-live="polite"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mukilan R, UI/UX Designer</title>
+  <meta name="description" content="About Mukilan R, a UI/UX designer from Tamil Nadu who designs in Figma and builds in HTML, CSS and JavaScript.">
+  <link rel="canonical" href="https://mukilanravi17.github.io/My-Portfolio/about.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://mukilanravi17.github.io/My-Portfolio/about.html">
+  <meta property="og:title" content="About | Mukilan R, UI/UX Designer">
+  <meta property="og:description" content="About Mukilan R, a UI/UX designer from Tamil Nadu who designs in Figma and builds in HTML, CSS and JavaScript.">
+  <meta property="og:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About | Mukilan R, UI/UX Designer">
+  <meta name="twitter:description" content="About Mukilan R, a UI/UX designer from Tamil Nadu who designs in Figma and builds in HTML, CSS and JavaScript.">
+  <meta name="twitter:image" content="https://mukilanravi17.github.io/My-Portfolio/assets/img/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme-preference');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme || systemTheme);
+      } catch(e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating Pill Navigation -->
+  <header class="nav-wrapper">
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <a href="./index.html" class="nav-monogram" aria-label="Mukilan R Home">
+        <span>MR</span>
+        <span class="mono-dot" aria-hidden="true"></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="./index.html#work" class="nav-link">Work</a></li>
+        <li><a href="./about.html" class="nav-link" aria-current="page">About</a></li>
+        <li><a href="./resume.html" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light color theme" aria-pressed="false">
+        <svg class="theme-icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+        </svg>
+        <svg class="theme-icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+        </svg>
+      </button>
+
+      <button type="button" id="mobile-menu-toggle" class="nav-mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu-panel">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <div id="mobile-menu-panel" class="mobile-menu-panel" hidden>
+        <ul class="mobile-menu-list">
+          <li><a href="./index.html#work" class="nav-link">Work</a></li>
+          <li><a href="./about.html" class="nav-link" aria-current="page">About</a></li>
+          <li><a href="./resume.html" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <div class="layout-with-sidebar">
+        
+        <!-- Left Column: Portrait & Quick Facts (Sticky on desktop, stacks on mobile) -->
+        <aside class="sticky-sidebar">
+          <div class="bento-card" style="padding: 0; overflow: hidden; margin-bottom: var(--space-4);">
+            <img src="./assets/img/profile.jpg" alt="Portrait of Mukilan R" class="portrait-img" width="300" height="360">
+          </div>
+
+          <div class="bento-card" style="padding: var(--space-4);">
+            <div class="mono-label" style="margin-bottom: var(--space-3);">QUICK FACTS</div>
+            <div style="display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.875rem;">
+              <div>
+                <span class="text-muted" style="display: block; font-size: 0.75rem; text-transform: uppercase;">Role</span>
+                <span style="font-weight: 600;">UI/UX Designer</span>
+              </div>
+              <div>
+                <span class="text-muted" style="display: block; font-size: 0.75rem; text-transform: uppercase;">Location</span>
+                <span>Rasipuram, Namakkal (DT), Tamil Nadu</span>
+              </div>
+              <div>
+                <span class="text-muted" style="display: block; font-size: 0.75rem; text-transform: uppercase;">Languages</span>
+                <span>English, Tamil, Kannada</span>
+              </div>
+              <div>
+                <span class="text-muted" style="display: block; font-size: 0.75rem; text-transform: uppercase;">Status</span>
+                <span class="status-pill" style="margin-top: 2px;">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span>Open to roles</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right Content Column -->
+        <article class="prose" style="max-width: var(--reading-width);">
+          <div class="mono-label" style="margin-bottom: var(--space-2);">02 / ABOUT</div>
+          <h1 class="h1-title" style="margin-bottom: var(--space-6);">About<span class="accent-dot">.</span></h1>
+
+          <p class="body-lead" style="margin-bottom: var(--space-6);">
+            I'm Mukilan, a UI/UX designer based in Rasipuram, Namakkal (DT), Tamil Nadu. I finished a B.E. in Computer Science and Engineering in 2026, after a diploma in Computer Engineering in 2023. Before my internship I completed an 80-hour UI/UX course at Livewire, Salem.
+          </p>
+
+          <section style="margin-top: var(--space-8);">
+            <h2 class="h2-title" style="margin-bottom: var(--space-3);">What I do</h2>
+            <p>
+              I design mobile and web interfaces in Figma: research, wireframes, UI and prototypes. I also build websites with HTML, CSS and JavaScript, so I can take a project from wireframe to a working page.
+            </p>
+          </section>
+
+          <section style="margin-top: var(--space-8);">
+            <h2 class="h2-title" style="margin-bottom: var(--space-3);">Problems I like working on</h2>
+            <p>
+              Tasks where someone has to get something done on a screen, such as planning a trip, donating to a cause or tracking progress. <!-- TODO: confirm or edit -->
+            </p>
+          </section>
+
+          <!-- TODO: How I work: 2-3 sentences describing my real process -->
+
+          <section style="margin-top: var(--space-8);">
+            <h2 class="h2-title" style="margin-bottom: var(--space-3);">Experience</h2>
+            <p>
+              UI/UX Design Intern, Duhzine IT Solutions, Navalur, Chennai (August–September 2026). I designed three projects in Figma: Vanguard Learn (a mobile app concept) and two client websites, VBST Tour & Travels and Annai Foundation. I built both websites in HTML, CSS and JavaScript.
+            </p>
+          </section>
+
+          <section style="margin-top: var(--space-8);">
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">Tools and skills</h2>
+            
+            <div class="skill-card-grid">
+              <div class="skill-group-card">
+                <div class="skill-group-title">Design</div>
+                <p style="font-size: 0.9375rem; color: var(--ink);">Wireframing, user flows, prototyping, visual design, responsive design, design thinking</p>
+              </div>
+
+              <div class="skill-group-card">
+                <div class="skill-group-title">Research</div>
+                <p style="font-size: 0.9375rem; color: var(--ink);">User-segment analysis, comparative audits <!-- TODO: add usability testing only if I ran tests --></p>
+              </div>
+
+              <div class="skill-group-card">
+                <div class="skill-group-title">Development</div>
+                <p style="font-size: 0.9375rem; color: var(--ink);">HTML, CSS, JavaScript</p>
+              </div>
+
+              <div class="skill-group-card">
+                <div class="skill-group-title">Tools</div>
+                <p style="font-size: 0.9375rem; color: var(--ink);">Figma, Adobe Photoshop, VS Code, GitHub</p>
+              </div>
+
+              <!-- Accessibility: TODO: what I actually applied -->
+
+              <div class="skill-group-card">
+                <div class="skill-group-title">Languages</div>
+                <p style="font-size: 0.9375rem; color: var(--ink);">English, Tamil, Kannada</p>
+              </div>
+            </div>
+          </section>
+
+          <section style="margin-top: var(--space-8);">
+            <h2 class="h2-title" style="margin-bottom: var(--space-3);">What I'm looking for</h2>
+            <p>
+              A UI/UX Designer role on a team where I can learn from senior designers and work closely with developers. <!-- TODO: Chennai, remote or willing to relocate? -->
+            </p>
+          </section>
+
+          <section style="margin-top: var(--space-8);">
+            <h2 class="h2-title" style="margin-bottom: var(--space-4);">Education and certification</h2>
+            <ul style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: var(--space-4);">
+              <li class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">B.E. Computer Science and Engineering</div>
+                <div class="text-muted" style="font-size: 0.9375rem;">Muthayammal Engineering College, Rasipuram · 2023–2026</div>
+                <div class="mono-label" style="margin-top: var(--space-1);">CGPA 6.7/10</div>
+              </li>
+              <li class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">Diploma, Computer Science and Engineering</div>
+                <div class="text-muted" style="font-size: 0.9375rem;">Muthayammal Polytechnic Institution, Rasipuram · 2020–2023</div>
+                <div class="mono-label" style="margin-top: var(--space-1);">88%</div>
+              </li>
+              <li class="bento-card" style="padding: var(--space-4);">
+                <div style="font-weight: 700; color: var(--ink);">UI/UX Design Certification</div>
+                <div class="text-muted" style="font-size: 0.9375rem;">Livewire (CADD Centre Training Services), Salem · 80 hours</div>
+                <div class="mono-label" style="margin-top: var(--space-1); margin-bottom: var(--space-3);">5 May – 18 August 2026</div>
+                <div>
+                  <a href="./assets/files/certificate.pdf" target="_blank" rel="noopener" class="btn-link" style="font-size: 0.875rem;">
+                    View certificate (PDF) <span class="sr-only">(opens in a new tab)</span>↗
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <div style="margin-top: var(--space-8); display: flex; gap: var(--space-4); flex-wrap: wrap;">
+              <a href="./resume.html" class="btn btn-primary">View resume <span class="arrow" aria-hidden="true">→</span></a>
+              <a href="./assets/files/Mukilan-R-Resume.pdf" class="btn btn-secondary" download="Mukilan-R-Resume.pdf">
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download resume (PDF)
+              </a>
+            </div>
+          </section>
+
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="mono-label">04 / CONTACT</div>
+          <h2 class="h2-title" style="margin-top: var(--space-2); margin-bottom: var(--space-4);">Get in touch<span class="accent-dot">.</span></h2>
+          <p class="body-lead text-muted" style="margin-bottom: var(--space-6); max-width: 50ch;">
+            I'm looking for a UI/UX Designer role. Email is the quickest way to reach me.
+          </p>
+          
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">EMAIL</span>
+              <a href="mailto:mukilanravikumar17@gmail.com" style="font-weight: 500; text-decoration: underline; text-underline-offset: 4px;">mukilanravikumar17@gmail.com</a>
+              <button type="button" class="copy-btn copy-email-btn" data-email="mukilanravikumar17@gmail.com" aria-label="Copy email address to clipboard">Copy email</button>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">PHONE</span>
+              <a href="tel:+916380234657" style="font-weight: 500;">+91 6380234657</a>
+            </div>
+            <div class="contact-channel-item">
+              <span class="mono-label" style="min-width: 80px;">LOCATION</span>
+              <span>Rasipuram, Namakkal (DT), Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mono-label" style="margin-bottom: var(--space-4);">PROFILES</div>
+          <ul class="footer-links-list">
+            <li class="footer-link-item">
+              <a href="https://linkedin.com/in/mukilan-ravi" target="_blank" rel="noopener">
+                LinkedIn
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li class="footer-link-item">
+              <a href="https://github.com/MukilanRavi17" target="_blank" rel="noopener">
+                GitHub
+                <span class="sr-only">(opens in a new tab)</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Mukilan R · UI/UX Designer · Tamil Nadu, India · © 2026 Mukilan R</div>
+        <div id="copy-status-live" class="sr-only" aria-live="polite"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>
